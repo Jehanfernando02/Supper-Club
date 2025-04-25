@@ -21,6 +21,18 @@ const supperPlanSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  guests: {
+    type: Number,
+    default: 0,
+  },
+  eventDate: {
+    type: Date,
+    default: null,
+  },
+  shared: {
+    type: Boolean,
+    default: false,
+  },
   createdAt: {
     type: Date,
     default: Date.now,
